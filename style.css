@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@layer reset {
+    body {
+        width: 100vw;
+        background-color: var(--dark-blue-main-bg);
+        display: flex;
+        justify-content: center;
+        font-family: "Raleway", sans-serif;
+        /* background-image: url(/assets/bg-curvy-desktop.svg); */
+    }
+
+    img {
+        display: block;
+        width: 100%;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+
+    h1,
+    h2,
+    h3,
+    p {
+        color: var(--white);
+    }
+
+    a {}
+}
+
+:root {
+    /* primary colors */
+    --dark-blue-intro: hsl(217, 28%, 15%);
+    --dark-blue-main-bg: hsl(218, 28%, 13%);
+    --dark-blue-mail-footer-bg: hsl(216, 53%, 9%);
+    --dark-blue-mail-testi-bg: hsl(219, 30%, 18%);
+
+    /* Accent colors */
+    --cyan-callToAction: hsl(176, 68%, 64%);
+    --blue-callToAction: hsl(198, 60%, 50%);
+    --light-red: hsl(0, 100%, 63%);
+
+    /* neutral color */
+    --white: hsl(0, 0%, 100%);
+
+    /* font-size */
+    --fs-sm: 1rem, 2vw, 1.5rem;
+    --fs-md: 1.5rem, 2.5vw, 2rem;
+    --fs-xl: 2rem, 3vw, 2.5rem;
+    --fs-xxl: 2.5rem, 3.5vw, 3rem;
+}
+
+main {
+    width: 70%;
+    margin-top: 50px;
+}
+
+.fyloHeader {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.h-logo {
+    font-size: 2rem;
+    color: white;
+}
+
+ul {
+    display: flex;
+    gap: 50px;
+}
+
+ul li a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 150px;
+}
+
+.intro div:first-child {
+    margin-bottom: 50px;
+}
+
+.intro img {
+    width: 100%;
+
+}
+
+.intro-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.intro-content h1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 80%;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    line-height: 1.5;
+
+}
+
+.intro-content p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 70%;
+    line-height: 1.5;
+    text-wrap: balane;
+    margin-bottom: 20px;
+
+}
+
+.intro-content button {
+    padding: 15px 50px;
+    border: none;
+    border-radius: 25px;
+    background-image: linear-gradient(var(--blue-callToAction), var(--cyan-callToAction));
+    cursor: pointer;
+    color: var(--white);
+    font-weight: 400;
+}
+
+.contents {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10%;
+}
+
+.content-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 45%;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 100px;
+}
+
+.content-1 div:first-child {
+    width: 10%;
+    display: noe;
+    margin-bottom: 15px;
+}
+
+.content-1 div:last-child {
+    text-align: center;
+}
+
+.content-1 div:last-child h2{
+    margin-bottom: 10px;
+}
+
+.content-1 div:last-child p{
+    font-weight: 100;
+}
+
+.productive {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    gap: 100px;
+
+}
+
+.productive div:first-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+.productive div:first-child img {
+    width: 90%;
+}
+
+.productive div:last-child {
+    display: flex;
+    justify-content: flex-start;
+    text-align: start;
+    align-items: start;
+    flex-direction: column;
+    width: 50%;
+}
+
+.productive div:last-child h1{
+    width: 70%;
+    text-wrap: balance;
+    line-height: 1.3;
+    margin-bottom: 20px;
+    display: non;
+}
+
+.productive div:last-child p{
+    font-weight: 100;
+    margin-bottom: 15px;
+}
+
+.productive div:last-child a{
+    display: flex;
+    align-items: center;
+    color: var(--white);
+    width: 30%;
+    flex-direction: row;
+    gap: 10px;
+}
+.productive div:last-child img{
+    width: 20px;
+}
+
+
