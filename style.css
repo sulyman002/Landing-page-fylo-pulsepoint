@@ -332,6 +332,8 @@ ul li a {
     top: -120px;
 }
 
+
+
 .mailUs h1 {
     margin-bottom: 20px;
 }
@@ -343,11 +345,43 @@ ul li a {
     line-height: 1.4;
 }
 
+
 .mailUs div {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
+}
+
+.mailUs div div {
+    display: noe;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.mailUs div div div {
+    display: none;
+    color: red;
+    font-size: 14px;
+
+
+    justify-content: start;
+    align-items: start;
+    gap: 0px;
+}
+
+.error_message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    display: none;
+}
+
+
+input.error {
+    border: 2px solid red;
 }
 
 .mailUs div input {
@@ -365,6 +399,10 @@ ul li a {
     cursor: pointer;
     color: var(--white);
     font-weight: 400;
+}
+
+.mailButton:active {
+    background-image: linear-gradient(var(--cyan-callToAction), var(--blue-callToAction));
 }
 
 footer {
@@ -760,6 +798,6 @@ footer {
 
     }
 
-   
+
 
 }

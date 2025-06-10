@@ -160,9 +160,21 @@
             <p>It only takes a minute to sign up and our free starter tier is extremely generous. if you have questions,
                 our support team would be happy to help you. </p>
 
-            <div id="mailUs">
-                <input type="text" placeholder="email@example.com"  name="mailButton" id="mailButton" required>
-                <button class="mailButton" id="mailButton"  type="submit">Get Started For Free</button>
+            <!-- <div>
+                <div>
+                    <input type="text" placeholder="email@example.com">
+                    <div class="error_message">Enter a valid email address</div>
+                </div>
+
+                <button class="mailButton" id="mailButton" type="submit">Get Started For Free</button>
+            </div> -->
+
+            <div>
+                <div>
+                    <input type="text" id="emailInput" placeholder="email@example.com">
+                    <div class="error_message" id="errorMessage">Enter a valid email address</div>
+                </div>
+                <button class="mailButton" id="mailButton" type="submit">Get Started For Free</button>
             </div>
 
         </div>
