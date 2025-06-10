@@ -385,7 +385,7 @@ input.error {
 }
 
 .mailUs div input {
-    width: 350px;
+    width: 100%;
     padding: 12px 25px;
     border: none;
     border-radius: 25px;
@@ -393,6 +393,7 @@ input.error {
 
 .mailButton {
     padding: 12px 25px;
+    white-space: nowrap;
     border: none;
     border-radius: 25px;
     background-image: linear-gradient(var(--blue-callToAction), var(--cyan-callToAction));
@@ -799,5 +800,9 @@ footer {
     }
 
 
+
+}
+
+@media screen and (max-width: 1024px) {
 
 }
