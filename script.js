@@ -1,21 +1,45 @@
 
 
+document.getElementById('mailButton').addEventListener('click', function(e){
+  e.preventDefault()
 
-document.getElementById('mailButton').addEventListener('click', function (e) {
-  e.preventDefault();
 
-  const emailInput = document.getElementById('emailInput');
-  const errorMessage = document.getElementById('errorMessage');
-  const email = emailInput.value.trim();
-  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const emailInput = document.getElementById('emailInput');
+const errorMesssage = document.getElementById('errorMessage');
+const removeWhiteSpace = emailInput.value.trim();
+const emailRedex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-  if (!emailRegex.test(email)) {
-    errorMessage.style.display = 'block';
-    emailInput.classList.add('error');
-  } else {
-    errorMessage.style.display = 'none';
-    emailInput.classList.remove('error');
-    '';
+if(!emailRedex.test(removeWhiteSpace)) {
+  errorMesssage.style.display = 'block';
+  // emailInput.classList.add('error');
 
-  }
+
+}else {
+  errorMesssage.style.display = 'none';
+  // emailInput.classList.remove('error');
+}
+
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
